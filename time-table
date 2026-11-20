@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Enrollment Form</title>
+</head>
+<body>
+
+    <form action="#" method="post">
+        <table border="1" cellspacing="0" cellpadding="10" align="center" width="60%">
+            <tr>
+                <th colspan="2">
+                    <h1>Student Enrollment Form</h1>
+                </th>
+            </tr>
+            <tr>
+                <th align="left" width="25%">Student Name *</th>
+                <td>
+                    <input type="text" name="student_name" placeholder="Enter your full name" size="45" required>
+                </td>
+            </tr>
+            <tr>
+                <th align="left">Father's Name *</th>
+                <td>
+                    <input type="text" name="father_name" placeholder="Enter father's name" size="45" required>
+                </td>
+            </tr>
+            <tr>
+                <th align="left">Date of Birth *</th>
+                <td>
+                    <input type="date" name="dob" required>
+                </td>
+            </tr>
+            <tr>
+                <th align="left">Gender *</th>
+                <td>
+                    <input type="radio" name="gender" value="Male" checked required> Male &nbsp;&nbsp;
+                    <input type="radio" name="gender" value="Female"> Female &nbsp;&nbsp;
+                    <input type="radio" name="gender" value="Other"> Other
+                </td>
+            </tr>
+            <tr>
+                <th align="left">Email *</th>
+                <td>
+                    <input type="email" name="email" placeholder="Enter your email address" size="45" required>
+                </td>
+            </tr>
+            <tr>
+                <th align="left">Mobile Number *</th>
+                <td>
+                    <input type="tel" name="mobile" placeholder="Enter 10 digit mobile number" maxlength="10" pattern="[0-9]{10}" size="45" required>
+                </td>
+            </tr>
+            <tr>
+                <th align="left">Address *</th>
+                <td>
+                    <textarea name="address" rows="3" cols="65" placeholder="Enter your full address" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th align="left">Course *</th>
+                <td>
+                    <select name="course" required>
+                        <option value="">-- Select Course --</option>
+                        <option value="BCA">BCA</option>
+                        <option value="B.Tech">B.Tech</option>
+                        <option value="MCA">MCA</option>
+                        <option value="B.Sc">B.Sc</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th align="left">Qualification *</th>
+                <td>
+                    <select name="qualification" required>
+                        <option value="">-- Select Qualification --</option>
+                        <option value="10th">10th</option>
+                        <option value="12th">12th</option>
+                        <option value="Graduate">Graduate</option>
+                        <option value="Post Graduate">Post Graduate</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th align="left">Skills</th>
+                <td>
+                    <input type="checkbox" name="skills" value="HTML"> HTML &nbsp;&nbsp;
+                    <input type="checkbox" name="skills" value="CSS"> CSS &nbsp;&nbsp;
+                    <input type="checkbox" name="skills" value="JavaScript"> JavaScript &nbsp;&nbsp;
+                    <input type="checkbox" name="skills" value="Python"> Python &nbsp;&nbsp;
+                    <input type="checkbox" name="skills" value="Java"> Java
+                </td>
+            </tr>
+            <tr>
+                <th align="left">Upload Photo</th>
+                <td>
+                    <input type="file" name="photo" accept="image/*">
+                </td>
+            </tr>
+            <tr>
+                <th align="left">Password *</th>
+                <td>
+                    <input type="password" name="password" placeholder="Enter a password" size="45" required>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Submit"> &nbsp;
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
