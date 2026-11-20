@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #777777;
+            line-height: 1.7;
+            font-size: 13px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            padding: 18px 0;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #006600;
+        }
+
+        .logo span {
+            color: #b5d692;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 45px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #007300;
+            font-size: 13px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Green Hero Banner */
+        .hero-banner {
+            background-color: #008000;
+            padding: 35px 0;
+        }
+
+        .hero-banner h1 {
+            color: #cbe6b3;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            display: flex;
+            gap: 40px;
+            padding: 35px 20px 60px;
+        }
+
+        .sidebar {
+            width: 220px;
+            flex-shrink: 0;
+        }
+
+        .sidebar h3 {
+            color: #006600;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar li {
+            margin-bottom: 8px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #007300;
+            font-size: 13px;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        .article-area {
+            flex: 1;
+        }
+
+        .source-btn {
+            display: inline-block;
+            background-color: #efefef;
+            border: 1px solid #b5b5b5;
+            border-radius: 3px;
+            padding: 4px 8px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #000000;
+            cursor: pointer;
+            margin-bottom: 18px;
+        }
+
+        .source-btn:hover {
+            background-color: #e2e2e2;
+        }
+
+        .article-area h2 {
+            color: #006600;
+            font-size: 20px;
+            margin: 22px 0 12px;
+        }
+
+        .article-area p {
+            color: #888888;
+            margin-bottom: 16px;
+        }
+
+        /* Bottom 3-Column Section */
+        .bottom-columns {
+            background-color: #d4e8b8;
+            padding: 35px 0 55px;
+        }
+
+        .columns-inner {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            padding-left: 45px;
+        }
+
+        .column {
+            flex: 1;
+        }
+
+        .column h3 {
+            color: #006600;
+            font-size: 18px;
+            margin-bottom: 14px;
+        }
+
+        .column p {
+            color: #1f7a1f;
+            margin-bottom: 14px;
+            font-size: 13px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 18px 0;
+            font-size: 12px;
+            color: #888888;
+        }
+
+        footer a {
+            color: #007300;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Header -->
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">Cool<span>Logo</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Full-Width Green Banner -->
+    <section class="hero-banner">
+        <div class="container">
+            <h1>Heading</h1>
+        </div>
+    </section>
+
+    <!-- Main Two-Column Content -->
+    <main class="container main-content">
+        <aside class="sidebar">
+            <h3>Left heading</h3>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+                <li><a href="#">Link 5</a></li>
+            </ul>
+        </aside>
+
+        <section class="article-area">
+            <button class="source-btn">View Template Source Code</button>
+            <p>Peace comes from within. Do not seek it without. This, too, will pass.</p>
+
+            <h2>Heading</h2>
+            <p>
+                The most important moment of your life is now. The most important person in your life is the one you are with now, and the most important activity in your life is the one you are involved with now. The smaller your reality, the more convinced you are that you know everything. Peace comes from within. Do not seek it without. The smaller your reality, the more convinced you are that you know everything.
+            </p>
+
+            <h2>Heading</h2>
+            <p>
+                The most important moment of your life is now. The most important person in your life is the one you are with now, and the most important activity in your life is the one you are involved with now. This, too, will pass.
+            </p>
+            <p>You will not be punished for your anger, you will be punished by your anger.</p>
+            <p>
+                You will not be punished for your anger, you will be punished by your anger. The smaller your reality, the more convinced you are that you know everything. This, too, will pass.
+            </p>
+        </section>
+    </main>
+
+    <!-- Pale Green 3-Column Section -->
+    <section class="bottom-columns">
+        <div class="container columns-inner">
+            <div class="column">
+                <h3>Heading</h3>
+                <p>This, too, will pass.</p>
+                <p>You will not be punished for your anger, you will be punished by your anger.</p>
+            </div>
+            <div class="column">
+                <h3>Heading</h3>
+                <p>The smaller your reality, the more convinced you are that you know everything. Peace comes from within. Do not seek it without.</p>
+            </div>
+            <div class="column">
+                <h3>Heading</h3>
+                <p>If the facts don't fit the theory, change the facts. This, too, will pass.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; Copyright <a href="#">Your Site</a> | <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
+    </footer>
+
+</body>
+</html>
